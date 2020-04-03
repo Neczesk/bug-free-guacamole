@@ -4,11 +4,11 @@
 [ext_resource path="res://sakura_background.ogv" type="VideoStream" id=2]
 [ext_resource path="res://external-content.duckduckgo.com.jpg" type="Texture" id=3]
 
-[sub_resource type="StyleBoxFlat" id=2]
+[sub_resource type="StyleBoxFlat" id=1]
 shadow_size = 30
 shadow_offset = Vector2( 10, 10 )
 
-[sub_resource type="StyleBoxTexture" id=1]
+[sub_resource type="StyleBoxTexture" id=2]
 texture = ExtResource( 3 )
 region_rect = Rect2( 0, 0, 1920, 1200 )
 
@@ -75,7 +75,7 @@ margin_bottom = 650.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
-custom_styles/panel = SubResource( 2 )
+custom_styles/panel = SubResource( 1 )
 
 [node name="WindowFrame" type="Panel" parent="MarginContainer/HBoxContainer/VBoxContainer/WindowEffects"]
 anchor_right = 1.0
@@ -83,7 +83,7 @@ anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
-custom_styles/panel = SubResource( 1 )
+custom_styles/panel = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
