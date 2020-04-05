@@ -68,25 +68,4 @@ caret_blink = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="FileDialog" type="FileDialog" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -373.0
-margin_top = -205.0
-margin_right = 373.0
-margin_bottom = 205.0
-rect_min_size = Vector2( 350, 122.5 )
-window_title = "Save Document"
-resizable = true
-mode_overrides_title = false
-access = 1
-current_dir = "user://"
-current_path = "user://"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 [connection signal="text_changed" from="Margins/Panel/MarginContainer/TextEdit" to="." method="_on_TextEdit_text_changed"]
-[connection signal="file_selected" from="FileDialog" to="." method="_on_FileDialog_file_selected"]

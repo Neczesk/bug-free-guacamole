@@ -12,17 +12,6 @@ func _ready():
 	$MarginContainer/HBoxContainer/TextInputWindow.connect("word_count_updated", self, "on_word_count_updated") # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-func save():
-	$MarginContainer/HBoxContainer/TextInputWindow.save_action_pressed()
-
-func open():
-	$MarginContainer/HBoxContainer/TextInputWindow.open_action_pressed()
-
-
 func on_word_count_updated(count: int):
 	emit_signal("word_count_updated", count)
 	
@@ -32,3 +21,9 @@ func count_words():
 
 func _on_OutsideView_finished():
 	$MarginContainer/HBoxContainer/VBoxContainer/WindowEffects/WindowFrame/MarginContainer/OutsideView.play() # Replace with function body.
+
+func get_current_text() -> String:
+	return $MarginContainer/HBoxContainer/TextInputWindow.get_current_text()
+	
+func set_current_text(text: String):
+	$MarginContainer/HBoxContainer/TextInputWindow.set_text(text)

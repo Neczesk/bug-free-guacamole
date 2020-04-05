@@ -23,6 +23,9 @@ margin_top = 4.0
 margin_right = 1920.0
 margin_bottom = 60.0
 size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="FileButton" type="MenuButton" parent="VBoxContainer/Panel/HBoxContainer"]
 margin_right = 35.0
@@ -61,3 +64,13 @@ margin_top = 10.0
 margin_right = 1920.0
 margin_bottom = 55.0
 size_flags_vertical = 5
+
+[node name="FileDialog" type="FileDialog" parent="."]
+margin_right = 366.0
+margin_bottom = 166.5
+rect_min_size = Vector2( 350, 122.5 )
+window_title = "Save Project"
+resizable = true
+access = 1
+current_dir = "user://"
+current_path = "user://"
